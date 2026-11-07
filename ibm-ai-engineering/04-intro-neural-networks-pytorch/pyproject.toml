@@ -1,0 +1,26 @@
+[project]
+name = "intro-neural-networks-pytorch"
+version = "0.1.0"
+description = "IBM AI Engineering · Khóa 04: Introduction to Neural Networks and PyTorch"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "torchvision>=0.29.2",
+    "scikit-learn>=1.7.2",
+    "ucimlrepo>=0.0.7",
+]
+
+[dependency-groups]
+dev = [
+    "jupyterlab",
+    "ipykernel",
+    "nbclient",
+    "nbformat",
+]
+
+[tool.uv]
+package = false
+default-groups = ["dev"]
