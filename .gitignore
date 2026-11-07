@@ -1,0 +1,11 @@
+# Môi trường uv (tạo lại bằng `uv sync`)
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# Dữ liệu tải về khi chạy lab (MNIST...)
+data/
+# Tham số mô hình lưu ra khi chạy lab/final project
+*.pt
+*.pth
+.DS_Store

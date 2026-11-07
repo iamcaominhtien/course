@@ -8,7 +8,7 @@ Học cùng Claude Code: Claude soạn bài, script, quiz, lab có gợi ý; mì
 | 01 | [Machine Learning with Python: Build Real-World ML Models](01-machine-learning-with-python/) | 20 | ⬜ Chưa bắt đầu |
 | 02 | [Introduction to Deep Learning & Neural Networks with Keras](02-intro-deep-learning-keras/) | 10 | ⬜ Chưa bắt đầu |
 | 03 | [Deep Learning with Keras and Tensorflow](03-deep-learning-keras-tensorflow/) | 23 | ⬜ Chưa bắt đầu |
-| 04 | [Introduction to Neural Networks and PyTorch](04-intro-neural-networks-pytorch/) | 19 | ⬜ Chưa bắt đầu |
+| 04 | [Introduction to Neural Networks and PyTorch](04-intro-neural-networks-pytorch/) | 19 | 📚 Đã soạn đủ 7 module (chưa học) |
 | 05 | [Deep Learning with PyTorch](05-deep-learning-pytorch/) | 21 | ⬜ Chưa bắt đầu |
 | 06 | [AI Capstone Project with Deep Learning](06-ai-capstone-deep-learning/) | 15 | ⬜ Chưa bắt đầu |
 | 07 | [Generative AI and LLMs: Architecture and Data Preparation](07-genai-llms-architecture-data/) | 6 | ⬜ Chưa bắt đầu |
@@ -20,3 +20,6 @@ Học cùng Claude Code: Claude soạn bài, script, quiz, lab có gợi ý; mì
 | 13 | [Project: Generative AI Applications with RAG and LangChain](13-project-genai-rag-langchain/) | 9 | ⬜ Chưa bắt đầu |
 
 Project nhỏ của từng khóa nằm trong [`projects/`](projects/).
+
+## Cách Claude lấy nội dung khóa
+Claude đọc bài trực tiếp từ Coursera qua browser pane (bạn đăng nhập trước), theo skill [`coursera-course-fetch`](../.claude/skills/coursera-course-fetch/SKILL.md): mục lục, transcript video, reading, đề lab. Đã thử và chạy được trên khóa 01; các khóa còn lại dùng cùng quy trình.

@@ -20,6 +20,13 @@ Claude vừa là người soạn khóa học vừa là mentor. Người học t�
 - Ngôn ngữ: tiếng Việt, giữ thuật ngữ tiếng Anh. (Chỉnh ở đây nếu muốn đổi.)
 - Mỗi khóa có project nhỏ, README tự giải thích: bài toán, cách làm và lý do chọn, kết quả.
 
+## Python: quản lý bằng uv
+Khóa/module nào có dùng Python thì **mọi thứ về Python đều qua `uv`**, không dùng `pip`, `python -m venv`, `conda`, `poetry` trực tiếp.
+- Mỗi khóa con có `pyproject.toml` và `uv.lock` riêng ở folder khóa (khóa khác nhau có thể cần thư viện xung đột, ví dụ TensorFlow và PyTorch). `uv.lock` được commit; `.venv/` không commit (đã có trong `.gitignore`).
+- Cài môi trường: `uv sync`. Chạy: `uv run python ...`, `uv run jupyter lab`. Thêm thư viện: `uv add <gói>` (công cụ dev như Jupyter: `uv add --dev <gói>`). Không sửa tay `uv.lock`.
+- Notebook và README của khóa hướng dẫn người học bằng `uv sync` và `uv run`, không bằng `pip install`.
+- Claude chạy thử code, lab và lời giải bằng `uv run` trước khi giao cho người học. Công cụ tạm dùng để sinh hay kiểm chứng bài (không thuộc khóa học) để ở thư mục tạm, không đưa vào repo.
+
 ## Git
 - Commit dưới tên người học (`Cao Minh Tiến`), không thêm `Co-Authored-By`, `Claude-Session` hay bất kỳ dòng ghi công Claude nào vào commit message.
 - Nếu git identity chưa đúng, đặt lại trước khi commit: `git config user.name "Cao Minh Tiến"` và `git config user.email "81006076+iamcaominhtien@users.noreply.github.com"`.
