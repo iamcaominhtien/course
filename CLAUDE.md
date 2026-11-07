@@ -19,3 +19,7 @@ Claude vừa là người soạn khóa học vừa là mentor. Người học t�
 ## Quy ước
 - Ngôn ngữ: tiếng Việt, giữ thuật ngữ tiếng Anh. (Chỉnh ở đây nếu muốn đổi.)
 - Mỗi khóa có project nhỏ, README tự giải thích: bài toán, cách làm và lý do chọn, kết quả.
+
+## Git
+- Commit dưới tên người học (`Cao Minh Tiến`), không thêm `Co-Authored-By`, `Claude-Session` hay bất kỳ dòng ghi công Claude nào vào commit message.
+- Nếu git identity chưa đúng, đặt lại trước khi commit: `git config user.name "Cao Minh Tiến"` và `git config user.email "81006076+iamcaominhtien@users.noreply.github.com"`.
